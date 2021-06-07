@@ -1,1 +1,0 @@
-# ShinHyoung-K.github.io
