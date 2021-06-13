@@ -5,12 +5,19 @@
 	<link href="css/style.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<title>Test Page</title>
+	    <script language="javascript">
+ 			function time(){
+ 			 var time= new Date(); //시간받기위해서 new date
+  			 document.getElementById("now").innerHTML=time.getFullYear() + "년 " + ( time.getMonth() + 1 ) + "월 " + time.getDate() + "일" + time.getHours()+"시"+time.getMinutes()+"분"+time.getSeconds()+"초";
+  			 setInterval("time()",1000);     //1초 지난후 time()실행
+  }
+      </script>
 </head>
 
-<body bgcolor="black" text="white">
-
+<body onload="time()" bgcolor="black" text="white"> 
+  <font> 현재 시간: <span id="now"></span></font>
 	<div>
-		<p id="time-result"></p> 
+		<p id="time-result"></p > 
 		<font size= 5>This is ShinHyoung's Homepage</font><br>
 		<br>
 		<a href="sub/aboutme.html"  style="font-size: 1.5em;" coler: "white;">About</a>
@@ -20,21 +27,11 @@
 		<font size= 5>Hello This is SH</font><br>
 		<font size= 5>And,This is my first web page</font><br>
 		<font size= 5>HaHa</font><br>
-		<a href="https://www.naver.com" target="_blank"><img src="img/sns.jpg" alt="네이버"></a>
+		<a href="https://www.naver.com" target="_blank"><img src="img/sns.jpg" width="90px;" height="90px;" alt="네이버"></a>
 
 	</div>
 </body>
 
+
 </html>
-
-    <script language="javascript">
- function time(){
-	 var d = new Date(); 
-     	var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일"; 
-     	var currentTime = d.getHours() + "시 " + d.getMinutes() + "분 " + d.getSeconds() + "초"; 
-     	var result = document.getElementById("time-result"); result.innerHTML = "오늘 날짜는 " + currentDate + ", 시간은 " + currentTime + " 입니다."; 
-     setInterval("time()",1000);     //1초 지난후 time()실행
-  }
-      </script>
-
 
