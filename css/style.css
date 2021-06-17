@@ -1,8 +1,0 @@
-@charset "EUC-KR";
-@font-face {
-	src: url("../font/Terminal.ttf");
-	font-family: "terminal";
-}
-font {
-	font-family: "terminal";
-}
